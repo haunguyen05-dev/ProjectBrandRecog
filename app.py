@@ -7,7 +7,7 @@ import cv2
 import threading
 
 # ==================== CONFIG ====================
-MODEL_PATH = "runs/train/brand_yolo/weights/last.pt"
+MODEL_PATH = "runs/train/brand_yolo/weights/best.pt"
 CONF_THRESHOLD = 0.46  # Confidence thấp hơn này sẽ coi là "Unknown"
 
 model = YOLO(MODEL_PATH)
