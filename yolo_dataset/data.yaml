@@ -1,0 +1,13 @@
+names:
+- Adidas
+- Amazon
+- Chrome
+- CocaCola
+- Google
+- KFC
+- Pepsi
+- Rolex
+nc: 8
+path: yolo_dataset
+train: images/train
+val: images/val
