@@ -1,16 +1,16 @@
 task: detect
 mode: train
-model: yolov8s.pt
+model: yolov8n.pt
 data: yolo_dataset/data.yaml
-epochs: 100
+epochs: 15
 time: null
 patience: 100
 batch: 6
-imgsz: 640
+imgsz: 480
 save: true
 save_period: -1
 cache: false
-device: '0'
+device: cpu
 workers: 0
 project: runs/train
 name: brand_yolo
@@ -103,4 +103,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: botsort.yaml
-save_dir: D:\ProjectMH\ProjectBrandRecog\runs\train\brand_yolo
+save_dir: D:\New folder (2)\ProjectBrandRecog\runs\train\brand_yolo

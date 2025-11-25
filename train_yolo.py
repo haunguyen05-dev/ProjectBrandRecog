@@ -6,7 +6,7 @@ def main():
     # ===============================
     # 1. Chọn model YOLOv8 pretrain
     # ===============================
-    model_name = "yolov8s.pt"
+    model_name = "yolov8n.pt"
 
     # ===============================
     # 2. Dataset YAML
@@ -24,8 +24,8 @@ def main():
     # ===============================
     train_params = {
         "data": data_yaml,
-        "imgsz": 640,
-        "epochs": 100,
+        "imgsz": 480,
+        "epochs": 15,
         "batch": 6,       # Windows + GPU VRAM 3050 nên giảm
         "device": device,
         "project": "runs/train",
